@@ -10,8 +10,8 @@ def hello_world():
 
 @app.route("/roster/<team>")
 def get_roster(team):
-    # url = f"https://www.mlb.com/{team}/roster/40-man"
-    url = f"https://www.mlb.com/yankees/roster/40-man"
+    url = f"https://www.mlb.com/{team}/roster/40-man"
+    # url = f"https://www.mlb.com/yankees/roster/40-man"
     print(url)
     
     response = requests.get(url)

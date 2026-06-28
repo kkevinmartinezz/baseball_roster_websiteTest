@@ -1,0 +1,4 @@
+node
+npm
+flask
+bs4

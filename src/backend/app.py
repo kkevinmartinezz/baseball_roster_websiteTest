@@ -32,5 +32,6 @@ def get_roster(team):
             for player in players:
                 found_player = player.find('td', 'info').find('a')
                 team_roster.append(found_player.string)
-        return f"<h1>{team_roster}</h1>"
+        # return f"<h1>{team_roster}</h1>"
+        return team_roster
             

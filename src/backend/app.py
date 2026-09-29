@@ -1,8 +1,11 @@
 from flask import Flask
 import requests
 from bs4 import BeautifulSoup
+from flask_cors import CORS, cross_origin #this will allow connection between front and backened sites
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/")
 def hello_world():

@@ -65,3 +65,16 @@ Still used https://react.semantic-ui.com/usage for Button functionality. -->
 Next to install button run:
 
 ``npm install react-dropdown-button --save`` -->
+
+## Front End reaching into Back End
+
+After including the dropdown as well as Button modules. We now will look into combining the Front End and Back end. We will do this through Axios. (https://axios.rest/pages/getting-started/first-steps.html)
+
+First install axios (not sure if matter but did this in /frontend/app). This will allow us to create a async scenario:
+
+``npm install axios``
+
+
+Then to allow your data to talk with each other fom different sites (backend -> frontend) by using flask-cors. Download with following (ran in /backend while in venv):
+
+``pip install flask-cors``
